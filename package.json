@@ -1,0 +1,23 @@
+{
+  "name": "fylo-landing-page-with-two-column-layout",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo landing page with two column layout challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/njorogejeff/fylo-landing-page-with-two-column-layout.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/njorogejeff/fylo-landing-page-with-two-column-layout/issues"
+  },
+  "homepage": "https://github.com/njorogejeff/fylo-landing-page-with-two-column-layout#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
