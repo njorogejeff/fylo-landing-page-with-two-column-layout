@@ -11,10 +11,9 @@
 	<title>Fylo Landing Page</title>
 	<link rel="stylesheet" href="./dist/main.css">
 </head>
-<!-- TODO: Extra large screen sizes -->
-<body class="max-w-screen-2xl 2xl:mx-auto">
+<body class="max-w-screen-2xl 2xl:mx-auto text-center md:text-left">
 	<header class="min-h-screen px-8 pt-10 md:px-20 md:pt-16">
-		<navbar class="flex justify-between items-center">
+		<navbar class="flex justify-between items-center mb-28">
 			<div>
 				<img src="./src/images/logo.svg" alt="Fylo Logo" class="w-28 md:w-full">
 			</div>
@@ -26,6 +25,25 @@
 				</ul>
 			</div>
 		</navbar>
+		<!-- Hero Section -->
+		<section class="flex flex-col gap-10">
+			<div>
+				<img src="./src/images/illustration-1.svg" alt="Fylo Landing Page Illustration">
+			</div>
+			<div>
+				<h1 class="text-2xl text-primaryDarkBlue font-bold mb-10">
+					All your files in one secure location, accessible anywhere.
+				</h1>
+				<p class="text-sm text-primaryDarkBlue mb-10 px-3">
+					Fylo stores your most important files in one secure location. Access them whenever you need, share and collaborate with friends, family, and co-workers.
+				</p>
+				<!-- TODO: Form input field and button -->
+				<form class="flex flex-col gap-5 px-3">
+					<input type="email" name="" id="" required placeholder="Enter your email..." class="block w-full font-raleWay px-7 py-4 border border-primaryDarkBlue rounded-md text-sm">
+					<button type="submit" class="block w-full bg-accentBrightBlue text-white font-bold py-3 rounded-md border-none mb-20">Get Started</button>
+				</form>
+			</div>
+		</section>
 	</header>
 </body>
 </html>
