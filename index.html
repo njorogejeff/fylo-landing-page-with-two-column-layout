@@ -39,7 +39,11 @@
 				</p>
 				<!-- TODO: Form input field and button -->
 				<form class="flex flex-col gap-5 px-3">
-					<input type="email" name="" id="" required placeholder="Enter your email..." class="block w-full font-raleWay px-7 py-4 border border-primaryDarkBlue rounded-md text-sm">
+					<div>
+						<input type="email" name="email" id="email" placeholder="Enter your email..." class="peer block w-full font-raleWay px-7 py-4 border border-primaryDarkBlue rounded-md text-sm focus:outline-none focus:border-primaryDarkBlue focus:ring-primaryDarkBlue focus:ring-1 invalid:border-pink-500">
+						<!-- <input type="email" name="email" id="email" class="px-3 py-2 border border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none" placeholder="Enter your email..." wfd-id="id2"> -->
+						<!-- <p class="mt-2 text-sm text-left text-pink-600">Please check your email</p> -->
+					</div>
 					<button type="submit" class="block w-full bg-accentBrightBlue text-white font-bold py-3 rounded-md border-none mb-20">Get Started</button>
 				</form>
 			</div>
