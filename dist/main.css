@@ -521,48 +521,8 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.bottom-3 {
-  bottom: 0.75rem;
-}
-
-.bottom-40 {
-  bottom: 10rem;
-}
-
-.bottom-20 {
-  bottom: 5rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-16 {
-  top: 4rem;
 }
 
 .mb-28 {
@@ -659,6 +619,14 @@ html {
   background-color: hsl(224 93% 58% / var(--tw-bg-opacity));
 }
 
+.bg-curve-mobile {
+  background-image: url(../src/images/bg-curve-mobile.svg);
+}
+
+.bg-curve-desktop {
+  background-image: url(../src/images/bg-curve-desktop.svg);
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -733,6 +701,10 @@ html {
   border-color: rgb(219 39 119 / var(--tw-border-opacity));
 }
 
+.hover\:bg-opacity-70:hover {
+  --tw-bg-opacity: 0.7;
+}
+
 .focus\:border-primaryDarkBlue:focus {
   --tw-border-opacity: 1;
   border-color: hsl(243 87% 12% / var(--tw-border-opacity));
@@ -752,26 +724,6 @@ html {
 .focus\:ring-primaryDarkBlue:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: hsl(243 87% 12% / var(--tw-ring-opacity));
-}
-
-.peer:invalid ~ .peer-invalid\:absolute {
-  position: absolute;
-}
-
-.peer:invalid ~ .peer-invalid\:relative {
-  position: relative;
-}
-
-.peer:invalid ~ .peer-invalid\:left-0 {
-  left: 0px;
-}
-
-.peer:invalid ~ .peer-invalid\:top-2 {
-  top: 0.5rem;
-}
-
-.peer:invalid ~ .peer-invalid\:mt-2 {
-  margin-top: 0.5rem;
 }
 
 .peer:invalid ~ .peer-invalid\:block {
