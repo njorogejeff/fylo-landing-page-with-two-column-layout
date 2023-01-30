@@ -521,8 +521,28 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mb-28 {
@@ -541,6 +561,10 @@ html {
   margin-top: 0.5rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -551,6 +575,14 @@ html {
 
 .hidden {
   display: none;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .min-h-screen {
@@ -619,12 +651,41 @@ html {
   background-color: hsl(224 93% 58% / var(--tw-bg-opacity));
 }
 
+.bg-primaryDarkBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(243 87% 12% / var(--tw-bg-opacity));
+}
+
+.bg-primaryDesaturatedBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(238 22% 44% / var(--tw-bg-opacity));
+}
+
+.bg-accentModerateCyan {
+  --tw-bg-opacity: 1;
+  background-color: hsl(170 45% 43% / var(--tw-bg-opacity));
+}
+
+.bg-lightGrayishBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 75% 98% / var(--tw-bg-opacity));
+}
+
+.bg-lightGray {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 75% / var(--tw-bg-opacity));
+}
+
 .bg-curve-mobile {
   background-image: url(../src/images/bg-curve-mobile.svg);
 }
 
-.bg-curve-desktop {
-  background-image: url(../src/images/bg-curve-desktop.svg);
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .px-8 {
@@ -653,6 +714,10 @@ html {
 
 .pb-20 {
   padding-bottom: 5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .text-left {
@@ -694,6 +759,21 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.before\:bg-curve-mobile::before {
+  content: var(--tw-content);
+  background-image: url(../src/images/bg-curve-mobile.svg);
+}
+
+.after\:bg-lightGrayishBlue::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 75% 98% / var(--tw-bg-opacity));
 }
 
 .invalid\:border-pink-600:invalid {
