@@ -27,7 +27,7 @@ module.exports = {
       backgroundImage: {
         'curve-desktop': 'url(../src/images/bg-curve-desktop.svg)',
         'curve-mobile': 'url(../src/images/bg-curve-mobile.svg)',
-      }
+      },
     },
   },
   plugins: [],
