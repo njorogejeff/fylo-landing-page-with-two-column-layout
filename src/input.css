@@ -11,3 +11,8 @@
         font-family: 'Open Sans', sans-serif;
     }
 }
+@layer utilities {
+    .filter-white {
+        filter: brightness(0) invert(1);
+    }
+}
