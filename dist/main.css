@@ -559,12 +559,16 @@ html {
   margin-top: 0.5rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mb-3 {
@@ -573,10 +577,6 @@ html {
 
 .mb-12 {
   margin-bottom: 3rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
 }
 
 .ml-10 {
@@ -644,6 +644,10 @@ html {
   max-width: 1536px;
 }
 
+.max-w-screen-5xl {
+  max-width: 1600px;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -678,10 +682,6 @@ html {
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-20 {
-  gap: 5rem;
 }
 
 .gap-3 {
@@ -968,20 +968,8 @@ html {
     margin-bottom: 5rem;
   }
 
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:grid {
-    display: grid;
-  }
-
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
   }
 
   .md\:flex-row-reverse {
