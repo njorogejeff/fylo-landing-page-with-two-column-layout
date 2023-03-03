@@ -23,6 +23,7 @@ module.exports = {
         '2xl': '1280px',
         '3xl': '1440px',
         '4xl': '1536px',
+        '5xl': '1600px',
       },
       backgroundImage: {
         'curve-desktop': 'url(../src/images/bg-curve-desktop.svg)',
