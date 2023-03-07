@@ -12,8 +12,8 @@
 	<title>Fylo Landing Page</title>
 	<link rel="stylesheet" href="./dist/main.css">
 </head>
-<body class="max-w-screen-5xl 4xl:mx-auto text-center md:text-left">
-	<header class="min-h-screen px-8 pt-10 pb-20 md:px-14 md:pt-16">
+<body class="text-center md:text-left">
+	<header class="max-w-screen-5xl 4xl:mx-auto min-h-screen px-8 pt-10 pb-20 md:px-20 md:pt-16">
 		<navbar class="flex justify-between items-center mb-28 md:mb-20 2xl:mb-12">
 			<div>
 				<img src="./src/images/logo.svg" alt="Fylo Logo" class="w-28 md:w-full">
@@ -53,64 +53,67 @@
 
 	<main>
 		<!-- Stay Productive Section -->
-		<!-- TODO: Display grid for medium screen sizes -->
 		<section>
-			<div class="">
-				<img src="./src/images/bg-curve-mobile.svg" alt="" class="w-full h-full">
+			<div class="w-full">
+				<img src="./src/images/bg-curve-mobile.svg" alt="" class="md:hidden w-full h-full">
+				<img src="./src/images/bg-curve-desktop.svg" alt="" class="hidden md:block w-full h-full">
 			</div>
-			<article class="bg-[#f8f8fe] px-8 pt-12 pb-20 md:px-14 flex flex-col gap-10 md:flex-row-reverse md:items-center lg:gap-20">
+			<article class="bg-[#f8f8fe]">
 				<!-- Stay Productive Illustration -->
-				<figure class="mb-20 sm:basis-7/12 lg:basis-1/2">
-					<img src="./src/images/illustration-2.svg" alt="">
-				</figure>
-				<!-- Stay Productive Description -->
-				<div class="md:text-left sm:basis-7/12 lg:basis-1/2">
-					<div class="mb-16">
-						<h2 class="font-raleWay text-lg text-center text-primaryDarkBlue font-bold mb-6 xl:text-4xl 2xl:text-[42px] 2xl:leading-normal">
-							Stay productive, wherever you are
-						</h2>
-						<p class="text-sm text-left text-primaryDarkBlue mb-5 xl:text-base 2xl:text-lg 2xl:pr-16">
-							Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
-						</p>
-						<p class="text-sm text-left text-primaryDarkBlue mb-10 xl:text-base 2xl:text-lg 2xl:pr-16">
-							Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
-						</p>
-						<a href="#" class="relative w-max mx-auto text-accentModerateCyan flex items-center justify-center gap-3">
-							See how Fylo works
-							<span>
-								<img src="./src/images/icon-arrow.svg" alt="" class="h-6">
-							</span>
-							<div class="absolute w-full -bottom-[6px] border-b-2 border-accentModerateCyan"></div>
-						</a>
-					</div>
-					<figure class="bg-white rounded-lg shadow-lg py-7 px-5 text-primaryDarkBlue sm:mx-10">
-						<blockquote>
-							<span class="block mb-3">
-								<img src="./src/images/icon-quotes.svg" alt="">
-							</span>
-							<p class="text-xs text-left leading-normal font-medium mb-5">
-								Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
-							</p>
-						</blockquote>
-						<figcaption class="flex items-center justify-start gap-5">
-							<img src="./src/images/avatar-testimonial.jpg" alt="Kyle Burton, Founder & CEO, Huddle" class="w-10 h-10 rounded-full">
-							<div class="text-left">
-								<h3 class="font-bold text-sm">
-									Kyle Burton
-								</h3>
-								<p class="text-xs">
-									Founder & CEO, Huddle
-								</p>
-							</div>
-						</figcaption>
+				<div class="max-w-screen-5xl 4xl:mx-auto px-8 pt-12 pb-20 md:px-20 flex flex-col gap-10 md:flex-row-reverse md:items-center lg:gap-20">
+					<figure class="mb-20 md:mb-0 sm:basis-7/12 lg:basis-1/2">
+						<img src="./src/images/illustration-2.svg" alt="">
 					</figure>
+					<!-- Stay Productive Description -->
+					<div class="md:text-left sm:basis-7/12 lg:basis-1/2">
+						<div class="mb-16">
+							<h2 class="font-raleWay text-lg text-primaryDarkBlue font-bold mb-6 xl:text-4xl 2xl:text-[40px] 2xl:leading-normal">
+								Stay productive, wherever you are
+							</h2>
+							<p class="text-sm text-left text-primaryDesaturatedBlue mb-5 md:mb-4 md:text-base md:text-primaryDarkBlue md:max-w-[87%] 2xl:pr-16">
+								Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
+							</p>
+							<p class="text-sm text-left text-primaryDesaturatedBlue mb-10 md:mb-5 md:text-base md:text-primaryDarkBlue md:max-w-[87%] 2xl:pr-16">
+								Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
+							</p>
+							<a href="#" class="relative w-max mx-auto text-accentModerateCyan flex items-center justify-center gap-3 md:ml-0 md:items-end">
+								See how Fylo works
+								<span>
+									<img src="./src/images/icon-arrow.svg" alt="" class="h-6 md:h-5">
+								</span>
+								<div class="absolute w-full -bottom-[6px] border-b-2 border-accentModerateCyan md:border-b-[1px] md:-bottom-1"></div>
+							</a>
+						</div>
+						<!-- TODO: Pick up from here -->
+						<figure class="bg-white rounded-lg shadow-lg py-7 px-5 text-primaryDarkBlue sm:mx-10 md:ml-0 md:max-w-[345px] md:px-8">
+							<blockquote>
+								<span class="block mb-3">
+									<img src="./src/images/icon-quotes.svg" alt="">
+								</span>
+								<p class="text-xs text-left leading-normal font-medium mb-5 md:text-sm">
+									Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+								</p>
+							</blockquote>
+							<figcaption class="flex items-center justify-start gap-5">
+								<img src="./src/images/avatar-testimonial.jpg" alt="Kyle Burton, Founder & CEO, Huddle" class="w-10 h-10 rounded-full">
+								<div class="text-left">
+									<h3 class="font-bold text-sm">
+										Kyle Burton
+									</h3>
+									<p class="text-xs">
+										Founder & CEO, Huddle
+									</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
 				</div>
 			</article>
 		</section>
 
 		<!-- CTA Section: Get Early Access -->
-		<section class="bg-primaryDesaturatedBlue px-10 py-20 md:px-14 md:pt-16">
-			<div class="flex flex-col gap-8">
+		<section class="bg-primaryDesaturatedBlue px-10 py-20 md:px-20 md:pt-16">
+			<div class="max-w-screen-5xl 4xl:mx-auto flex flex-col gap-8">
 				<div class="text-white">
 					<h2 class="text-xl font-bold mb-5">
 						Get early access today
@@ -133,7 +136,7 @@
 	</main>
 
 	<footer class="bg-primaryDarkBlue text-white text-lg">
-		<div class="px-10 py-16">
+		<div class="max-w-screen-5xl 4xl:mx-auto px-10 py-16">
 			<div class="filter-white mb-12">
 				<img src="./src/images/logo.svg" alt="Fylo Logo">
 			</div>
