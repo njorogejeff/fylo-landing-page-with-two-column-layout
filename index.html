@@ -59,20 +59,20 @@
 				<img src="./src/images/bg-curve-desktop.svg" alt="" class="hidden md:block w-full h-full">
 			</div>
 			<article class="bg-[#f8f8fe]">
-				<div class="max-w-screen-5xl 4xl:mx-auto px-8 pt-12 pb-20 md:px-20 md:grid grid-cols-2 grid-rows-[auto] gap-y-20">
+				<div class="max-w-screen-5xl 4xl:mx-auto px-8 pt-12 pb-20 md:px-20 md:grid grid-cols-2 grid-rows-[auto] gap-y-20 md:gap-x-4 xl:grid-cols-[auto] xl:gap-y-12">
 					<!-- Stay Productive Illustration -->
-					<figure class="mb-20 row-start-1 row-span-1 col-start-2 md:place-self-center md:mb-0 sm:basis-7/12 lg:basis-1/2">
+					<figure class="mb-20 row-start-1 row-span-1 col-start-2 md:place-self-center md:mb-0 xl:col-start-2 xl:row-start-1 xl:row-span-2">
 						<img src="./src/images/illustration-2.svg" alt="">
 					</figure>
 					<!-- Stay Productive Description -->
-					<div class="mb-16 md:mb-0 md:place-self-center">
+					<div class="mb-16 md:mb-0 md:place-self-center xl:col-start-1 xl:row-start-1 xl:row-span-1">
 						<h2 class="font-raleWay text-lg text-primaryDarkBlue font-bold mb-6 xl:text-4xl 2xl:text-[40px] 2xl:leading-normal">
 							Stay productive, wherever you are
 						</h2>
-						<p class="text-sm text-left text-primaryDesaturatedBlue mb-5 md:mb-4 md:text-base md:text-primaryDarkBlue md:max-w-[87%] 2xl:pr-16">
+						<p class="text-sm text-left text-primaryDesaturatedBlue mb-5 md:mb-4 xl:text-base md:text-primaryDarkBlue md:max-w-[600px] 2xl:pr-16">
 							Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
 						</p>
-						<p class="text-sm text-left text-primaryDesaturatedBlue mb-10 md:mb-5 md:text-base md:text-primaryDarkBlue md:max-w-[87%] 2xl:pr-16">
+						<p class="text-sm text-left text-primaryDesaturatedBlue mb-10 md:mb-5 xl:text-base md:text-primaryDarkBlue md:max-w-[600px] 2xl:pr-16">
 							Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
 						</p>
 						<a href="#" class="relative w-max mx-auto text-accentModerateCyan flex items-center justify-center gap-3 md:ml-0 md:items-end">
@@ -84,7 +84,7 @@
 						</a>
 					</div>
 					<!-- Stay Productive Testimonial -->
-					<figure class="bg-white rounded-lg shadow-lg py-7 px-5 text-primaryDarkBlue sm:mx-10 md:mx-auto md:max-w-[345px] md:px-8 md:col-span-2">
+					<figure class="bg-white rounded-lg shadow-lg py-7 px-5 text-primaryDarkBlue sm:mx-10 md:mx-auto md:max-w-[345px] md:px-8 md:col-span-2 xl:ml-0 xl:col-start-1 xl:row-start-2 xl:row-span-1">
 						<div>
 							<blockquote>
 								<span class="block mb-3">
@@ -113,18 +113,19 @@
 
 		<!-- CTA Section: Get Early Access -->
 		<section class="bg-primaryDesaturatedBlue px-10 py-20 md:px-20 md:pt-16">
-			<div class="max-w-screen-5xl 4xl:mx-auto flex flex-col gap-8">
-				<div class="text-white">
-					<h2 class="text-xl font-bold mb-5">
+			<div class="max-w-screen-5xl 4xl:mx-auto flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+				<div class="text-white md:basis-1/2">
+					<h2 class="text-xl font-bold mb-5 xl:text-3xl">
 						Get early access today
 					</h2>
-					<p class="text-sm">
+					<p class="text-sm xl:text-base xl:max-w-[500px]">
 						It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
 					</p>
 				</div>
-				<form class="flex flex-col gap-5 lg:flex-row 2xl:pr-20">
+				<form class="flex flex-col gap-5 md:basis-1/2">
 					<div class="relative lg:basis-3/5">
 						<input type="email" name="email" id="email" placeholder="Enter your email..." class="peer block w-full px-7 py-4 border rounded text-sm focus:outline-none focus:border-primaryDarkBlue focus:ring-primaryDarkBlue focus:ring-1 invalid:border-pink-500">
+						<!-- TODO: Input form invalid message for large screen sizes -->
 						<p class="mt-2 text-sm text-left text-white hidden peer-invalid:block lg:absolute lg:top-16 lg:left-0 lg:mt-0">
 							Please check your email
 						</p>
