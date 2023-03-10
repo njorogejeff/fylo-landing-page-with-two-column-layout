@@ -28,6 +28,7 @@
 		</navbar>
 		<!-- Hero Section -->
 		<section class="flex flex-col gap-10 md:flex-row-reverse md:items-center lg:gap-20">
+			<!-- TODO: Separate The Description and The Form Elements -->
 			<div class="sm:basis-7/12 lg:basis-1/2">
 				<img src="./src/images/illustration-1.svg" alt="Fylo Landing Page Illustration">
 			</div>
@@ -136,13 +137,13 @@
 	</main>
 
 	<footer class="bg-primaryDarkBlue text-white text-lg">
-		<div class="max-w-screen-5xl 4xl:mx-auto px-10 py-16">
+		<div class="max-w-screen-5xl 4xl:mx-auto px-10 py-16 md:px-20">
 			<div class="filter-white mb-12">
 				<img src="./src/images/logo.svg" alt="Fylo Logo">
 			</div>
-			<div>
+			<div class="md:grid grid-cols-2 grid-rows-[auto] gap-y-20 2xl:grid-cols-3 2xl:grid-rows-1">
 				<!-- Fylo Contacts -->
-				<div class="mb-16">
+				<div class="mb-16 md:mb-0">
 					<div class="flex items-center justify-start mb-6">
 						<span><img src="./src/images/icon-phone.svg" alt=""></span>
 						<a href="tel:+1-543-123-4567" class="absolute ml-10">Phone: +1-543-123-4567</a>
@@ -153,8 +154,8 @@
 					</div>
 				</div>
 				<!-- External Links -->
-				<div class="text-left mb-20">
-					<div class="mb-10">
+				<div class="text-left mb-20 md:mb-0 md:flex items-start justify-evenly 2xl:justify-between 2xl:pr-20">
+					<div class="mb-10 md:mb-0">
 						<ul class="flex flex-col gap-5">
 							<li class="hover:text-purple-300">
 								<a href="#">About Us</a>
@@ -185,7 +186,7 @@
 					</div>
 				</div>
 				<!-- Social Links -->
-				<div>
+				<div class="col-start-1 col-span-2 2xl:col-start-3">
 					<ul class="flex items-center justify-center gap-5 text-xl">
 						<!-- Facebook -->
 						<a href="https://facebook.com" class="border rounded-full h-11 w-11 flex items-center justify-center hover:cursor-pointer hover:border-purple-400 hover:text-purple-400">
